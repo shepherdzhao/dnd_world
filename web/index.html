@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>World of Dungeon</title>
+        <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+        <link rel="stylesheet" href="styles/cover.css" />
+	</head>
+	<body>
+		<div class="site-wrapper">
+    			<div class="site-wrapper-inner">
+        			<div class="cover-container">
+            			<div class="masthead clearfix">
+                			<div class="inner">
+                    			<h3 class="masthead-brand">World of Dungeon</h3>
+                    			<nav>
+			                    <ul class="nav masthead-nav">
+			                        <li class="active"><a data-toggle="modal" href="#register_modal">注册</a></li>
+			                        <li><a href="#introduction">介绍</a></li>
+			                        <li><a href="#library">大图书馆</a></li>
+			                        <li><a href="#about">关于</a></li>
+			                    </ul>
+                    			</nav>
+                			</div>
+            			</div>
+
+            			<!-- Register Modal -->
+            			<div ms-controller="registerCtl" id="register" ms-include-src="'views/index/register_modal.html'"> </div>
+
+		            <div class="inner cover">
+		                <h1 class="cover-heading">World of Dungeon.</h1>
+		                <p class="lead">介绍介绍介绍.</p>
+		            </div>
+            			<button style="width:150px" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login_modal">进入</button>
+
+            			<!--login Modal -->
+            			<div ms-controller="loginCtl" id="login" ms-include-src="'views/index/login_modal.html'"></div>
+
+		            <div class="mastfoot">
+		                <div class="inner">
+		                    <p>World of Dungeon @ 2015</p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+	<script data-main="modules/index/main" src="vendor/avalon/avalon.js"></script>
+</html>

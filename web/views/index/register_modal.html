@@ -1,0 +1,35 @@
+<div class="modal fade modal" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true" data-backdrop="static">
+	<div class="modal_wrapper">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="registerLabel" style="font-weight:400">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form name="register_form">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="name" type="text" class="form-control" placeholder="输入用户名" ms-duplex="user_name" ms-blur="checkUserExist"/>
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input name="password" type="password" class="form-control" placeholder="输入密码" ms-duplex="user_password"/>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input name="repassword" type="password" class="form-control" placeholder="重复密码" ms-duplex="user_repassword"/>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" type="email" class="form-control" placeholder="输入电子邮件" ms-duplex="user_email"/>
+                        </div>
+                        <div class="modal-footer" style="text-align:center">
+                            <button style="width:100px" type="button" class="btn btn-primary" ms-click="register_click">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
